@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <h1>Creating JavaScript Widget</h1>
+  <p>
+    You should see the widget on the bottom right! check the article
+  </p>
+  <script>
+    const alldata = {
+      range: {
+        1: {
+          value: 1000,
+          min: 1000,
+          max: 20000,
+          step: 1000
+        },
+        2: {
+          value: 15,
+          min: 1,
+          max: 50,
+          step: 0.1
+        },
+        3: {
+          value: 15,
+          min: 0.5,
+          max: 100,
+          step: 0.5
+        },
+        4: {
+          value: 50,
+          min: 1,
+          max: 100,
+          step:0.5
+        },
+        5: {
+          value: 500,
+          min: 100,
+          max: 100000,
+          step:100
+        }
+      },
+      montly_mfee: {
+        0: {
+          min: 1,
+          max: 2499,
+          multipal: 0.25,
+          setupfee: 499
+        },
+        1: {
+          min: 2500,
+          max: 7499,
+          multipal: 0.225,
+          setupfee: 749
+        },
+        2: {
+          min: 7500,
+          max: 14999,
+          multipal: 0.2,
+          setupfee: 999
+        },
+        3: {
+          min: 15000,
+          max: 100000,
+          multipal: 0.175,
+          setupfee: 1499
+        }
+      },
+    }
+    window.onload = () => {
+      widget = window.PPC(JSON.stringify(alldata));
+      widget.greeting = 'This is another message!';
+    }
+  </script>
+</body>
+
+
+
+
+</html>
