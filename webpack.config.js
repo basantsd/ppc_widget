@@ -19,7 +19,7 @@ module.exports = {
     libraryTarget: 'umd',
     libraryExport: 'default',
     path: path.resolve(__dirname, 'dist', `v${major}`),
-    filename: `widget${isProduction ? '.min' : ''}.js`,
+    filename: `ppc${isProduction ? '.min' : ''}.js`,
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
