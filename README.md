@@ -1,7 +1,3 @@
-# JavaScript Widget Example
-
-This is the source code for our article published [here](https://rasayel.io/blog/how-to-create-a-javascript-widget/).
-
 ## Setup
 
 1. Install dependencies
